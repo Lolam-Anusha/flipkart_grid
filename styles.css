@@ -1,0 +1,113 @@
+*{
+    list-style-type: none;
+}
+header{
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+}
+header:hover{
+    transform: scale(0.98);
+}
+li{
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+li:hover{
+    color: blueviolet;
+    font-size: 30px;
+    transform: rotate(20deg);
+}
+.main1{
+    background-color: lightgrey;
+    font-family: sans-serif;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+}
+.main1:hover{
+    transform: scale(0.97);
+}
+.div1{
+   display: grid;
+   grid-template-columns:auto auto auto auto auto auto auto auto;
+   column-gap: 10px;
+   row-gap: 10px;
+   height: 200px;
+   margin-top: 30px;
+   cursor: pointer;
+}
+.div2{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 200px;
+    cursor: pointer;
+ }
+.child1{
+    border: 1px solid gray;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgb(82, 57, 57);
+}
+img{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+p{
+    text-align: center;
+}
+strong{
+   padding-left: 40px;
+}
+.main2{
+    background-color: lightgrey;
+    font-family: sans-serif;
+    width: 100%;
+    height: 300px;
+    justify-content: space-around;
+}
+.main2:hover{
+    transform: scale(0.98);
+}
+img:hover{
+    /*transform: scale(0.8);*/
+   
+    transform: scale(0.8) rotate(20deg);
+}
+.child1:hover{
+transform: scale(0.9);
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+        "aside section"
+        "footer footer";
+    width: 100%;
+    height: 50vh;
+    grid-template-rows: auto 100px;
+    grid-template-columns: 750px 750px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+.aside{
+    grid-area: aside;
+    border: 1px solid gray;
+}
+.section{
+    grid-area: section;
+    border: 1px solid gray;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(86, 82, 82);
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
